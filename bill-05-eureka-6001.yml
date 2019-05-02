@@ -1,11 +1,11 @@
-﻿spring:
+spring:
   profiles:
     active: dev
 ---
-spring:
-  profiles: dev
 server:
   port: 6001
+spring:
+  profiles: dev
 eureka:
   client:
     register-with-eureka: false
@@ -17,10 +17,10 @@ eureka:
   instance:
     hostname: eureka6001.com
 ---
-spring:
-  profiles: proc
 server:
   port: 6011
+spring:
+  profiles: proc
 eureka:
   client:
     register-with-eureka: false

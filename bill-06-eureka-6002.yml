@@ -1,0 +1,33 @@
+﻿spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+server:
+  port: 6002
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://192.168.10.11:6001/eureka
+  server:
+    enable-self-preservation: false
+  instance:
+    hostname: eureka6002.com
+---
+spring:
+  profiles: proc
+server:
+  port: 6012
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://192.168.10.11:6002/eureka
+  server:
+    enable-self-preservation: false
+  instance:
+    hostname: eureka6012.com

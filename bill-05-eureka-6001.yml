@@ -11,7 +11,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://192.168.10.11:6002/eureka
+      defaultZone: http://192.168.10.12:6002/eureka
   server:
     enable-self-preservation: false
   instance:
@@ -26,7 +26,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://192.168.10.11:6012/eureka
+      defaultZone: http://192.168.10.12:6012/eureka
   server:
     enable-self-preservation: false
   instance:
